@@ -25,8 +25,8 @@ public abstract class NavigationRouterActivity extends AppCompatActivity impleme
 
     @Override
     public void finish() {
-        super.finish();
         onActivityClose();
+        super.finish();
     }
 
     /**
