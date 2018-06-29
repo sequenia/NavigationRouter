@@ -41,8 +41,8 @@ public class NavigationRouter implements Cloneable {
     /**
      * Initialization of {@link NavigationRouter}
      *
-     * @param activity
-     * @param containerId
+     * @param activity    activity for providing FragmentManager and OnChangeScreenListener behavior
+     * @param containerId container identifier of frame layout
      */
     public NavigationRouter(AppCompatActivity activity, int containerId) {
         this.containerId = containerId;

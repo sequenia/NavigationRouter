@@ -1,1 +1,1 @@
-include ':navigation-router', ':navigation-router-sample'
+include ':navigation-router-sample', ':navigation-router', ':stub-appcompat'

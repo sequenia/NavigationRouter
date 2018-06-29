@@ -11,6 +11,9 @@ import android.support.v7.app.AppCompatActivity;
  * {@link AppCompatActivity Activity} with {@link NavigationRouter}
  */
 public abstract class NavigationRouterActivity extends AppCompatActivity implements OnChangeScreenListener {
+    /**
+     * Handles the navigation of screens
+     */
     protected NavigationRouter navigationRouter;
 
     @Override
