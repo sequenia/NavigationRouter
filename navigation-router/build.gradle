@@ -6,7 +6,7 @@ targetCompatibility = JavaVersion.VERSION_1_7
 
 ext {
     targetVersionCode = 5
-    targetVersionName = "0.1.35-alpha"
+    targetVersionName = "0.1.7-alpha"
 }
 
 dependencies {

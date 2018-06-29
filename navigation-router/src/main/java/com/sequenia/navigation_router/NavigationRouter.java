@@ -105,10 +105,12 @@ public class NavigationRouter implements Cloneable {
      * @see #closeCurrentScreen()
      */
     public void closeToScreen(int position, boolean includePosition) {
-        String transactionTag = getTagByPosition(position);
-        fragmentManager.popBackStack(transactionTag,
-                includePosition ? POP_BACK_STACK_INCLUSIVE : 0);
-        screenCount -= screenCount - (includePosition ? 0 : 1) - position;
+        if ((position + (includePosition ? 1 : 0)) < screenCount) {
+            String transactionTag = getTagByPosition(position);
+            fragmentManager.popBackStack(transactionTag,
+                    includePosition ? POP_BACK_STACK_INCLUSIVE : 0);
+            screenCount -= screenCount - (includePosition ? 0 : 1) - position;
+        }
     }
 
     /**

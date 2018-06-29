@@ -16,7 +16,7 @@
 >Step 2. Add the dependency
 ```groovy
 	dependencies {
-	        compile 'com.github.foxaice:NavigationRouter:v0.1.2-alpha'
+	        compile 'com.github.foxaice:NavigationRouter:v0.1.7-alpha'
 	}
 ```
 ## How to Use
