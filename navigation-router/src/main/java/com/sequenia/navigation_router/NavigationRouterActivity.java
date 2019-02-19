@@ -26,18 +26,13 @@ public abstract class NavigationRouterActivity extends AppCompatActivity impleme
         }
     }
 
-    @Override
-    public void finish() {
-        onActivityClose();
-        super.finish();
-    }
-
     /**
      * Closes the current screen
      * and finishes the activity when the screens quantity equals 0 or 1
      */
     @Override
     public void onBackPressed() {
+        onScreenClose();
         if (navigationRouter.getScreenCount() == 1 || navigationRouter.getScreenCount() == 0) {
             finish();
         } else {
@@ -64,9 +59,9 @@ public abstract class NavigationRouterActivity extends AppCompatActivity impleme
     protected abstract Fragment openFirstScreen();
 
     /**
-     * Closes the screen when activity is finished
+     * Triggers when the screen is closing
      */
-    private void onActivityClose() {
+    private void onScreenClose() {
         Fragment fragment = navigationRouter.getCurrentScreen();
         if (fragment != null && fragment instanceof ScreenCloseable) {
             ((ScreenCloseable) fragment).onCloseScreen();
