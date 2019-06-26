@@ -1,6 +1,6 @@
 package com.sequenia.navigation_router_sample.fragments;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.sequenia.navigation_router.NavigationRouter;
 
