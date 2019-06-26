@@ -2,12 +2,13 @@ package com.sequenia.navigation_router_sample;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.sequenia.navigation_router.NavigationRouterActivity;
 import com.sequenia.navigation_router_sample.fragments.AddableFragment;

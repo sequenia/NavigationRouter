@@ -1,14 +1,14 @@
 package com.sequenia.navigation_router;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentManager.OnBackStackChangedListener;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.lang.ref.WeakReference;
 
-import static android.support.v4.app.FragmentManager.POP_BACK_STACK_INCLUSIVE;
+import static androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE;
 
 /**
  * This class handles the navigation of screens
