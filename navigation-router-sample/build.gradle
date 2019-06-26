@@ -31,6 +31,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.github.foxaice:navigationRouter:v0.1.7-alpha'
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.github.foxaice:navigationRouter:0.2.0-alpha'
 }
